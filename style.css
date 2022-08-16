@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.background {
+  background-image: url("./images/background-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40vw;
+}
+
+.content {
+  width: max(640px, 60vw);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content>* {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.heading {
+  flex: 1;
+  background-color: rgb(247, 247, 247);
+  padding-top: 96px;
+}
+
+.heading-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main {
+  flex: 1;
+  box-shadow: 0px 6px 6px -4px rgb(155, 155, 155);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+.form-content>div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 96px;
+  margin-bottom: 12px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: dimgrey;
+}
+
+input {
+  margin-top: 8px;
+  border: solid 1px #e5e7eb;
+  outline: solid 1px #e5e7eb;
+  width: 14rem;
+  height: 2rem;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+
+input:focus {
+  border: solid 1px cornflowerblue;
+  outline: solid 1px cornflowerblue;
+  box-shadow: 3px 3px 3px dimgray;
+}
+
+input.error {
+  border: solid 1px orangered;
+  outline: solid 1px orangered;
+}
+
+.footer {
+  margin-top: 4px;
+  padding-top: 24px;
+  flex: 1;
+  background-color: rgb(247, 247, 247);
+}
+
+button {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: darkorchid;
+  border: solid 1px darkorchid;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px lightgray;
+  width: 12rem;
+  height: 2.5rem;
+}
+
+a {
+  color: darkorchid;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkorchid;
+  text-decoration: none;
+}

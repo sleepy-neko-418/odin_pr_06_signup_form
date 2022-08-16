@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin - SignUp Form - Le Son Tung</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="background"></div>
+    <div class="content">
+      <div class="heading">
+        <p class="heading-text">
+          This is not a real online service!
+          You know you need something like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.
+        </p>
+        <p class="heading-text">
+          You <em>know</em> you want to.
+        </p>
+      </div>
+      <div class="main">
+        <p class="heading-text">Let's do this!</p>
+        <form action="" method="post" id="signup-form">
+          <div class="form-content">
+            <div class="form-name">
+              <div class="form-name-first">
+                <label for="first-name">First name</label><br>
+                <input type="text" name="first-name" required id="first-name-inp">
+              </div>
+              <div class="form-name-last">
+                <label for="last-name">Last name</label><br>
+                <input type="text" name="last-name" required id="last-name-inp">
+              </div>
+            </div>
+            <div class="form-info">
+              <div class="form-info-email">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" required id="email-inp">
+              </div>
+              <div class="form-info-phone">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="phone" required id="phone-inp" placeholder="0912-345-678"
+                  pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+              </div>
+            </div>
+            <div class="form-password">
+              <div class="form-password-1">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" required id="password-inp">
+              </div>
+              <div class="form-password-2">
+                <label for="confirm-password">Confirm Password</label><br>
+                <input type="password" name="confirm-password" required id="confirm-password-inp">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <button type="submit" form="signup-form" id="signup-button">Create Account</button>
+        <div class="login-text">
+          <p>
+            Already have an account? <a href="">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
